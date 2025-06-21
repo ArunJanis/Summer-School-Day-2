@@ -1,0 +1,104 @@
+/* Element selectors */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Group selector: styling both h1 and h3 together */
+h1, h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Class selector */
+.bio {
+  font-style: italic;
+  color: #6a5acd;
+}
+
+/* ID selector */
+#profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffd700;
+}
+
+/* Main card styling */
+.card {
+  display: flex;
+  width: 700px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+/* Hover lift effect */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Left side image */
+.card-image {
+  flex: 0 0 250px;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Right side content */
+.card-content {
+  flex: 1;
+  padding: 25px;
+}
+
+/* Hobbies list */
+.card-content ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+}
+
+.card-content li {
+  background: #eef8ff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #333;
+}
+
+/* Descendant selector */
+.contact p {
+  color: #00796b;
+  font-weight: bold;
+}
+
+/* Attribute selector */
+a[href] {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a[href]:hover {
+  text-decoration: underline;
+  color: #005fa3;
+}
